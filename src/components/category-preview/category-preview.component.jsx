@@ -2,14 +2,12 @@
 import { CategoryPreviewContainer, Preview, Title } from './category-preview.styles'
 
 import ProductCard from '../product-card/product-card.component'
-import { Link } from 'react-router-dom'
-
 
 export default function CategoryPreview({ title, products }) {
   return (
     <CategoryPreviewContainer>
         <h2>
-            <Link to={title} className='title'>{title.toUpperCase()}</Link>           
+            <Title to={title}>{title.toUpperCase()}</Title>           
         </h2>
         <Preview>
             {products
